@@ -1,5 +1,5 @@
 /*
-    class : java와 같음. 모든 클래스의 부모는 Object
+  class : java와 같음. 모든 클래스의 부모는 Object
  */
 void main() {
   Idol blackPink = Idol();
@@ -8,7 +8,6 @@ void main() {
 
   blackPink.sayHello();
   blackPink.introduce();
-
 }
 
 class Idol {
@@ -20,7 +19,7 @@ class Idol {
   }
 
   introduce() {
-    print('저희 멤버는 지수, 리사, 로제, 제니, 입니다');
+    print('저희 멤버는 지수, 리사, 로제, 제니 입니다');
   }
 
   int memberCount() {

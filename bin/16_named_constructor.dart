@@ -1,9 +1,11 @@
 void main() {
-  Idol idol1 = Idol('블랙핑크',['리사','로제']);
+  Idol idol1 = Idol('블랙핑크', ['리사','로제','제니','지수']);
   print(idol1.name);
   idol1.introduce();
 
-  Idol idol2 = Idol.fromList([['정국','뷔','진'],'BTS']);
+  idol1.name = '더조은';
+
+  Idol idol2 = Idol.con([['정국','지민','뷔','진'],'BTS']);
   print(idol2.members);
   idol2.sayHello();
 }
@@ -14,13 +16,12 @@ class Idol {
 
   Idol(this.name, this.members);
 
-  Idol.fromList(List values)
-    : this.members = values[0],
-      this.name = values[1];
+  Idol.con(List values)
+      : this.members = values[0],
+        this.name = values[1];
 
   sayHello() {
-    String name = 'hong';
-    print('안녕하세요 ${this.name} 입니다');
+    print('안녕하세요 $name 입니다.');
   }
 
   introduce() {

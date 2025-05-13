@@ -1,3 +1,8 @@
+/*
+  - 집합 자료형 : List, Set, Map
+
+  * List type(java와 동일)
+ */
 void main() {
   List<String> name = ['홍길동', '강감찬', '제니'];
   List<int> numbers = [1,2,3,4,5];

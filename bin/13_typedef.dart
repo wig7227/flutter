@@ -1,14 +1,15 @@
 /*
-  - typedef : 함수타입을 정의하기 위해 typedef를 사용할 수 있다
-  - 함수의 타입을 명확하게 표현할 수 있어 가독성이 높아짐.
-  - 특정 타입을 가진 함수를 많이 사용할 경우 간결한 코드를작성할 수 있음.
+  - typedef : 함수 타입을 정의하기 위해 typedef를 사용할 수 있다
+    함수의 타입을 명확하게 표현할 수 있어 가독성이 높아짐.
+    특정 타입을 가진 함수를 많이 사용할 경우 간결한 코드를 작성할 수 있음.
 
-  * 사용법
-  typedef 유형이름 = 함수타입;
+    * 사용법
+    typedef 유형이름 = 함수타입;
  */
 
 /*
-void main (){
+
+void main() {
   Operation op = add;
   int result = op(1,2,3);
   print(result);
@@ -36,4 +37,10 @@ typedef Operation = int Function(int x, int y, int z);
 
 int add(int x, int y, int z) => x + y + z;
 int subtract(int x, int y, int z) => x - y - z;
-int calulate(int x , int y, int z, Operation op) => op(x,y,z);
+int calulate(int x, int y, int z, Operation op) => op(x,y,z);
+
+/*
+int calulate(int x, int y, int z, Operation op) {
+  return op(x,y,z);
+}
+*/

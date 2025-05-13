@@ -1,8 +1,8 @@
 /*
   final, const
   같은 점 : 상수, 자료형을 생략할 수 있다
-  다른 점 : final은 build time을 몰라도 됨(build하는 순간 값을 몰라도 된다)
-            const는 build에 미리 값을 알아야 됨
+  다른점 : final은 build time을 몰라도 됨(build하는 순간 값을 몰라도 된다)
+          const는 build time에 미리 값을 알아야 됨
  */
 void main() {
   final String name = 'john';
@@ -23,6 +23,4 @@ void main() {
   const DateTime now3 = DateTime.now();
   print(now3);
   */
-
-
 }
